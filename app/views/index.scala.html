@@ -1,0 +1,17 @@
+
+@main("Onion Router Logs") {
+
+     <table class="table table-striped">
+         <tr>
+             <th>Timestamp</th>
+             <th>Node Name</th>
+             <th>Log Message</th>
+         </tr>
+        <tr ng-repeat="orlog in orlogs">
+            <td>{{orlog.timestamp}}</td>
+            <td>{{orlog.ornode}}</td>
+            <td>{{orlog.message}}</td>
+        </tr>
+     </table>
+    
+}
